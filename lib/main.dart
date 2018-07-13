@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp2());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        body: Container(
+          color: Colors.orange,
+        ),
         appBar: AppBar(
+          title: Text("Flutter"),
           actions: <Widget>[
             IconButton(
               icon: Icon(
@@ -20,9 +24,7 @@ class MyApp extends StatelessWidget {
               onPressed: () {},
             )
           ],
-          title: Text("Flutter"),
         ),
-        body: Container(),
         floatingActionButton: FloatingActionButton(
           onPressed: null,
           child: Icon(
