@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(HomePage());
+  runApp(MyApp());
 }
 
-class HomePage extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Flutter"),
           actions: <Widget>[
             IconButton(
               icon: Icon(
@@ -21,7 +20,9 @@ class HomePage extends StatelessWidget {
               onPressed: () {},
             )
           ],
+          title: Text("Flutter"),
         ),
+        body: Container(),
         floatingActionButton: FloatingActionButton(
           onPressed: null,
           child: Icon(
@@ -34,5 +35,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
-//Iteration 1 took 2m 45s
